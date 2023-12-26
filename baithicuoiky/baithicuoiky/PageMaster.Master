@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PageMaster.master.cs" Inherits="baithicuoiky.PageMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+           <style>
+     #table{
+       
+         width:80%;
+         border:2px solid black;
+     }
+     .c5{
+         width:100%;
+            border-top: 2px solid black;
+    border-bottom: 2px solid black;
+   border-right: 2px solid black;
+     }
+     .c1{
+        
+         border: 2px solid black;
+     }
+    .c2{
+        
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+    }
+    .h1{
+        text-align: center ;
+        color: darkblue ;
+    }
+   .c4{
+       text-align:left;
+   }
+   .c6{
+       text-align: center;
+   }
+   .c7{
+       text-align: right;
+   }
+ </style>
+ <form id="form2" runat="server">
+     <div>
+         
+         <table id="table">
+             <tr>
+              
+                 <td class="h1">
+                     TRƯỜNG CAO ĐẲNG CÔNG THƯƠNG VIỆT NAM <br />
+                    "Đào tạo những gì doanh nghiệp cần"
+                 </td>
+
+                 <td>
+                     <asp:Image ID="Image1" runat="server" ImageUrl="~/img/th.jpg" Width="120px" />
+                 </td>
+               
+             </tr>
+             <tr class="c5">
+                 
+                 <td class="c2">
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                 </td>
+
+                 <td class="c1" >
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/CapNhatTruongHoc.aspx">Cập nhật trường học </asp:HyperLink> <br />
+                   <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ThietKeTimKiem.aspx">Thiết kế trang tìm kiếm </asp:HyperLink>
+                 </td>
+               
+
+             </tr>
+             <tr>
+         <td class="c4">
+               
+              Nguyễn Thị Cúc     <br />
+              Đề thi số: 02
+         </td>
+        <td class="c6">
+                  MSSV:  2111QL202124 <br />
+                  Số báo danh : CCN6B.02
+        </td >
+          
+             
+              <td class="c7">
+                  Lớp: CCN04.6B
+              </td>
+
+         </tr>
+             
+         </table>
+        </div>
+    </form>
+</body>
+  
+</html>
